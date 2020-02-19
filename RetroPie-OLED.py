@@ -129,7 +129,7 @@ def main():
             # except FileNotFoundError:
         except IOError:
             try:
-                titleimg = Image.open("/home/pi/RetroPie-OLED/maintitle.png").convert('1')
+                titleimg = Image.open("/home/pi/RetroPie-OLED/maintitle-c64pi.png").convert('1')
             except IOError:
                 ipaddr = get_ip_address(cmd, cmdeth)
                 ipaddr = ipaddr.replace("\n","")

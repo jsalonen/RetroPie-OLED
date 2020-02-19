@@ -217,14 +217,14 @@ def main():
                 ry = randint(0, 2) - 1
                 
                 if game_length > 16:
-                    current_h, text_padding = 18, 0
+                    current_h, text_padding = (18-16), 0
                 else :
-                    current_h, text_padding = 26, 2
+                    current_h, text_padding = (26-16), 2
                 draw.rectangle((0,0,width,height), outline=0, fill=0 )
-                if systemicon != "none" :
-                    image.paste(icon,(0+rx,0+ry))
-                else :
-                    draw.text( ((width-system_size[0])/2+rx, top+ry), unicode(system), font=font_system, fill=255 )
+                #if systemicon != "none" :
+                #    image.paste(icon,(0+rx,0+ry))
+                #else :
+                #    draw.text( ((width-system_size[0])/2+rx, top+ry), unicode(system), font=font_system, fill=255 )
                 for line in gname:
                     #print "text name display"
                     gname_size = draw.textsize(line, font=font_rom)
